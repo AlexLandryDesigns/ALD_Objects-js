@@ -5,23 +5,23 @@ Extends the way HTML objects and elements can be analyzed modified. Includes way
 
 ## Functions/Prototypes/Methods Quick List:
 	
-**.isParentElement**(*parentTagName*, *class*)
+**.isParentElement**( *parentTagName*, *class* )
 
-**.hasParentElement**(*parentTagName*)
+**.hasParentElement**( *parentTagName* )
 	
-**.hasThisClass**(*class*)
+**.hasThisClass**( *class* )
 
-**.addThisClass**(*class*)
+**.addThisClass**( *class* )
 
-**addThisClass**(*nodeObject*, *class*, *multiObjectBool*)
+**addThisClass**( *nodeObject*, *class*, *multiObjectBool* )
  
-**.removeThisClass**(*class*)
+**.removeThisClass**( *class* )
 
-**removeThisClass**(*nodeObject*, *class*, *multiObjectBool*)
+**removeThisClass**( *nodeObject*, *class*, *multiObjectBool* )
  
-**.replaceThisClass**(*replaceThis*, *class*)
+**.replaceThisClass**( *replaceThis*, *class* )
 
-**replaceThisClass**(*nodeObject*, *replaceThis*, *class*, *multiObjectBool*)
+**replaceThisClass**( *nodeObject*, *replaceThis*, *class*, *multiObjectBool* )
 	 
 ### Parameters:
 - *parentTagName* - Tag name of parent element (case insensitive)
@@ -36,23 +36,30 @@ Extends the way HTML objects and elements can be analyzed modified. Includes way
 ### .isParentElement(*parentTagName*, *class*)
 	
 #### Description:
+
 Sets the attached element node object to the next parent tag matching the parentTagName argument and/or the class argument.
 			
 Is like the "change directory" command in command prompts, but it only moves upward through parent elements.
+
 Classes in parent class lists may also be searched for. The first match will return the associated parent.
+
 If there are no matches, the return is undefined.
 		
 #### Parameters:
 *parentTagName* (required)
-			
-Description:
+
+**Description:**
+
 The name of the parent tag to become. Always becomes the next tag that matches the name or the first match of an array of names.
 					
-Type:
+**Type:**
+
 String or Array of Strings
 		
-Return:
+**Return:**
+
 An element node object if a match is found.
+
 Undefined if a match is not found.
 			
 		
