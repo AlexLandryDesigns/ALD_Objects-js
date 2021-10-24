@@ -25,11 +25,11 @@ Extends the way HTML objects and elements can be analyzed modified. Includes way
  replaceThisClass(*nodeObject*, *replaceThis*, *class*, *multiObjectBool*)
 	 
 ### Parameters:
-  parentTagName - Tag name of parent element (case insensitive)
-          class - A class name as a string or an array of strings
-    replaceThis - Replace this class with other classes.
-     nodeObject - An HTML node object if multiObjectBool is not true or an array of HTML node objects if multiObjectBool is true.
-multiObjectBool - Sets whether or not a nodeObject is a node object or an array of node objects.
+- parentTagName - Tag name of parent element (case insensitive)
+- class - A class name as a string or an array of strings
+- replaceThis - Replace this class with other classes.
+- nodeObject - An HTML node object if multiObjectBool is not true or an array of HTML node objects if multiObjectBool is true.
+- multiObjectBool - Sets whether or not a nodeObject is a node object or an array of node objects.
 	  
 	  
 	  
