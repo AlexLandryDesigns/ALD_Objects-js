@@ -44,11 +44,11 @@ Classes in parent class lists may also be searched for. The first match will ret
 If there are no matches, the return is undefined.
 		
 #### Parameters:
-*parentTagName* (required) (String or Array of Strings)
+	*parentTagName* (required) (String or Array of Strings)
 
-The name of the parent tag to become. Always becomes the next tag that matches the name or the first match of an array of names.
+	The name of the parent tag to become. Always becomes the next tag that matches the name or the first match of an array of names.
 		
-**Return:** An element node object if a match is found. Undefined if a match is not found.
+	**Return:** An element node object if a match is found. Undefined if a match is not found.
 		
 ### .hasParentElement(*parentTagName*)
 	
