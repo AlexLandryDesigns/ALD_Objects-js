@@ -6,7 +6,7 @@ Extends the way HTML objects and elements can be analyzed modified. Includes way
 
 ## Functions/Prototypes/Methods Quick List:
 	
-	.isParentElement(*parentTagName*, *class*)
+	.isParentElement(_parentTagName_, *class*)
 	.hasParentElement(*parentTagName*)
 	
 	.hasThisClass(*class*)
