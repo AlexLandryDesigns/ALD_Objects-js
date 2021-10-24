@@ -4,18 +4,18 @@ Extends the way HTML objects and elements can be analyzed modified. Includes way
 
 
 
-Functions/Prototypes/Methods Quick List:
+## Functions/Prototypes/Methods Quick List:
 	
-	.isParentElement(parentTagName, class)
-	.hasParentElement(parentTagName)
+	.isParentElement(*parentTagName*, *class*)
+	.hasParentElement(*parentTagName*)
 	
-	.hasThisClass(class)
-	.addThisClass(class)
-	 addThisClass(nodeObject, class, multiObjectBool)
-	.removeThisClass(class)
-	 removeThisClass(nodeObject, class, multiObjectBool)
-	.replaceThisClass(replaceThis, class)
-	 replaceThisClass(nodeObject, replaceThis, class, multiObjectBool)
+	.hasThisClass(*class*)
+	.addThisClass(*class*)
+	 addThisClass(*nodeObject*, *class*, *multiObjectBool*)
+	.removeThisClass(*class*)
+	 removeThisClass(*nodeObject*, *class*, *multiObjectBool*)
+	.replaceThisClass(*replaceThis*, *class*)
+	 replaceThisClass(*nodeObject*, *replaceThis*, *class*, *multiObjectBool*)
 	 
 	 Parameters:
 		parentTagName - Tag name of parent element (case insensitive)
@@ -26,7 +26,7 @@ Functions/Prototypes/Methods Quick List:
 	  
 	  
 	  
-Functions/Prototypes/Methods Descriptions:
+## Functions/Prototypes/Methods Descriptions:
 
 	.isParentElement(parentTagName, class)
 	
