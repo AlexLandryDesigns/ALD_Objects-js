@@ -34,8 +34,6 @@ Extends the way HTML objects and elements can be analyzed modified. Includes way
 ## Functions/Prototypes/Methods Descriptions:
 
 ### .isParentElement(*parentTagName*, *class*)
-	
-#### Description:
 
 Sets the attached element node object to the next parent tag matching the parentTagName argument and/or the class argument.
 			
@@ -46,22 +44,11 @@ Classes in parent class lists may also be searched for. The first match will ret
 If there are no matches, the return is undefined.
 		
 #### Parameters:
-*parentTagName* (required)
-
-**Description:**
+*parentTagName* (required) (String or Array of Strings)
 
 The name of the parent tag to become. Always becomes the next tag that matches the name or the first match of an array of names.
-					
-**Type:**
-
-String or Array of Strings
 		
-**Return:**
-
-An element node object if a match is found.
-
-Undefined if a match is not found.
-			
+**Return:** An element node object if a match is found. Undefined if a match is not found.
 		
 ### .hasParentElement(*parentTagName*)
 	
