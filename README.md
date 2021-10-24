@@ -3,63 +3,60 @@
 Extends the way HTML objects and elements can be analyzed modified. Includes ways of checking classes and data sets.
 
 
-
 ## Functions/Prototypes/Methods Quick List:
 	
-.isParentElement(_parentTagName_, *class*)
+**.isParentElement**(*parentTagName*, *class*)
 
-.hasParentElement(*parentTagName*)
+**.hasParentElement**(*parentTagName*)
 	
-.hasThisClass(*class*)
+**.hasThisClass**(*class*)
 
-.addThisClass(*class*)
+**.addThisClass**(*class*)
 
- addThisClass(*nodeObject*, *class*, *multiObjectBool*)
+**addThisClass**(*nodeObject*, *class*, *multiObjectBool*)
  
-.removeThisClass(*class*)
+**.removeThisClass**(*class*)
 
- removeThisClass(*nodeObject*, *class*, *multiObjectBool*)
+**removeThisClass**(*nodeObject*, *class*, *multiObjectBool*)
  
-.replaceThisClass(*replaceThis*, *class*)
+**.replaceThisClass**(*replaceThis*, *class*)
 
- replaceThisClass(*nodeObject*, *replaceThis*, *class*, *multiObjectBool*)
+**replaceThisClass**(*nodeObject*, *replaceThis*, *class*, *multiObjectBool*)
 	 
 ### Parameters:
-- parentTagName - Tag name of parent element (case insensitive)
-- class - A class name as a string or an array of strings
-- replaceThis - Replace this class with other classes.
-- nodeObject - An HTML node object if multiObjectBool is not true or an array of HTML node objects if multiObjectBool is true.
-- multiObjectBool - Sets whether or not a nodeObject is a node object or an array of node objects.
-	  
+- *parentTagName* - Tag name of parent element (case insensitive)
+- *class* - A class name as a string or an array of strings
+- *replaceThis* - Replace this class with other classes.
+- *nodeObject* - An HTML node object if multiObjectBool is not true or an array of HTML node objects if multiObjectBool is true.
+- *multiObjectBool* - Sets whether or not a nodeObject is a node object or an array of node objects.
 	  
 	  
 ## Functions/Prototypes/Methods Descriptions:
 
-	.isParentElement(parentTagName, class)
+### .isParentElement(*parentTagName*, *class*)
 	
-		Description:
-			Sets the attached element node object to the next parent tag matching the parentTagName argument and/or the class argument.
+#### Description:
+Sets the attached element node object to the next parent tag matching the parentTagName argument and/or the class argument.
 			
-			Is like the "change directory" command in command prompts, but it only moves upward through parent elements.
-			Classes in parent class lists may also be searched for. The first match will return the associated parent.
-			If there are no matches, the return is undefined.
+Is like the "change directory" command in command prompts, but it only moves upward through parent elements.
+Classes in parent class lists may also be searched for. The first match will return the associated parent.
+If there are no matches, the return is undefined.
 		
-		Parameters:
-			parentTagName (required)
+#### Parameters:
+*parentTagName* (required)
 			
-				Description:
-					The name of the parent tag to become. Always becomes the next tag that matches the name or the first match of an array of names.
+Description:
+The name of the parent tag to become. Always becomes the next tag that matches the name or the first match of an array of names.
 					
-				Type:
-					String
-					Array of Strings
+Type:
+String or Array of Strings
 		
-		Return:
-			An element node object if a match is found.
-			Undefined if a match is not found.
+Return:
+An element node object if a match is found.
+Undefined if a match is not found.
 			
 		
-	.hasParentElement(parentTagName)
+### .hasParentElement(*parentTagName*)
 	
 		Description:
 			Checks whether the preceeding node object has the specified parent element tag.
