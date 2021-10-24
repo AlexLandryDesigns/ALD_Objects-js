@@ -7,14 +7,21 @@ Extends the way HTML objects and elements can be analyzed modified. Includes way
 ## Functions/Prototypes/Methods Quick List:
 	
 .isParentElement(_parentTagName_, *class*)
+
 .hasParentElement(*parentTagName*)
 	
 .hasThisClass(*class*)
+
 .addThisClass(*class*)
+
  addThisClass(*nodeObject*, *class*, *multiObjectBool*)
+ 
 .removeThisClass(*class*)
+
  removeThisClass(*nodeObject*, *class*, *multiObjectBool*)
+ 
 .replaceThisClass(*replaceThis*, *class*)
+
  replaceThisClass(*nodeObject*, *replaceThis*, *class*, *multiObjectBool*)
 	 
 ### Parameters:
